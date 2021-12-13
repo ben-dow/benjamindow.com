@@ -130,7 +130,6 @@ export default function Resume() {
 
                         <div className="space-y-6">
                             {resume.map(item => {
-                                console.log(item)
                                 return <Job job={item} />
                             })}
                         </div>
@@ -146,7 +145,6 @@ export default function Resume() {
                         
                         <div className="space-y-6">
                             {activities.map(item => {
-                                console.log(item)
                                 return <OtherActivities activity={item} />
                             })}
                         </div>
