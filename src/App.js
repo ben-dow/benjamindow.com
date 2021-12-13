@@ -1,4 +1,5 @@
 import {Route, Routes, useLocation} from "react-router-dom";
+import NotFoundPage from "./404";
 import About from "./About";
 import Home from "./Home";
 import Nav from "./nav";
@@ -17,6 +18,7 @@ export default function App() {
                 <Route path="/about" exact element={<About/>}/>
                 <Route path="/resume" exact element={<Resume/>}/>
                 <Route path="/projects" exact element={<Projects/>}/>
+                <Route path="*" element={<NotFoundPage/>}/>
 
             </Routes>
       </div>
