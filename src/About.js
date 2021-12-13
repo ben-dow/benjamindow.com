@@ -5,7 +5,7 @@ export default function About() {
     return (
         <div className="flex flex-grow justify-center items-center">
 
-            <div className="flex w-full text-white bg-slate-700 bg-opacity-75 mx-auto items-center xl:justify-evenly sm:justify-between p-10 ">
+            <div className="flex w-full text-white bg-slate-700 bg-opacity-90 mx-auto items-center xl:justify-evenly sm:justify-between p-10 ">
                 <div className="h-full flex items-center flex-col space-y-5 ">
                     <img className="shadow-lg rounded-full w-96 border-none" src={profile}/>
                     <h4 className="font-mono text-2xl font-thin">Benjamin "Benji" Dow</h4>

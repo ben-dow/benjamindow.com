@@ -9,7 +9,7 @@ export default function App() {
   const location = useLocation();
 
   return (
-      <div className="h-screen w-full flex flex-col  bg-adks bg-cover">
+      <div className="h-screen overflow-y-auto w-full flex flex-col  bg-adks bg-cover bg-fixed">
             {(location.pathname === "/" ? null : <Nav/>)}
             <Routes>
                 <Route path="/" exact element={<Home/>}/>

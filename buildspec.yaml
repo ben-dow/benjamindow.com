@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - yarn install --ignore-engines
+  build:
+    commands:
+      - yarn build
+      - cd build
+      - ls
+
+artifacts:
+  base-directory: ./build
+  files:
+    - '**/*'
+
+cache:
+  paths:
+    - './node_modules/**/*'
