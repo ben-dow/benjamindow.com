@@ -3,7 +3,11 @@ module.exports = {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'adks': "url('/src/img/adk.JPG')",
+      }
+    },
   },
   plugins: [],
 }
