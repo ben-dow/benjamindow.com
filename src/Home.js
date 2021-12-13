@@ -31,7 +31,7 @@ export default function Home() {
                     <div className="space-y-5 mr-10">
                         <div><Link to="/about"><div  className="font-mono text-white bg-slate-900 p-4 text-center rounded hover:bg-slate-800 cursor-pointer">About Me</div></Link></div>
                         <div><Link to="/resume"><div  className="font-mono text-white bg-slate-900 p-4 text-center rounded hover:bg-slate-800 cursor-pointer">Resume</div> </Link></div>
-                        <div><Link to="/projects"><div  className="font-mono text-white bg-slate-900 p-4 text-center rounded hover:bg-slate-800 cursor-pointer">Projects</div></Link></div>
+                        {/*<div><Link to="/projects"><div  className="font-mono text-white bg-slate-900 p-4 text-center rounded hover:bg-slate-800 cursor-pointer">Projects</div></Link></div>*/}
                     </div>
                 </div>
             </div>

@@ -26,7 +26,7 @@ export default function Nav() {
                 <div><Navlinkcustom label="Home" to="/"/></div>
                 <div><Navlinkcustom label="About Me" to="/about"/></div>
                 <div><Navlinkcustom label="Resume" to="/resume"/></div>
-                <div><Navlinkcustom label="Projects" to="/projects"/></div>
+                {/*<div><Navlinkcustom label="Projects" to="/projects"/></div>*/}
             </div>
             </div>
     )
