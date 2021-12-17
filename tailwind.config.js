@@ -4,6 +4,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'tiny' : '.7rem'
+      },
+      
       backgroundImage: {
         'adks': "url('/src/img/adk.JPG')",
       }
