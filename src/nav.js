@@ -37,9 +37,9 @@ export default function Nav() {
             <div className="inline-flex sm:hidden cursor-pointer">
 
                 {!showMobileMenu ? 
-                                    <FontAwesomeIcon  display={false} className="text-white text-2xl" icon={faBars} onClick={()=>{setShowMobileMenu(!showMobileMenu)}}/>
+                                    <FontAwesomeIcon className="text-white text-2xl" icon={faBars} onClick={()=>{setShowMobileMenu(!showMobileMenu)}}/>
                 : 
-                <FontAwesomeIcon display={false} className="text-white text-2xl" icon={faTimes} onClick={()=>{setShowMobileMenu(!showMobileMenu)}}/>
+                <FontAwesomeIcon className="text-white text-2xl" icon={faTimes} onClick={()=>{setShowMobileMenu(!showMobileMenu)}}/>
                 }
             </div>
 
