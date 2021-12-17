@@ -81,13 +81,13 @@ export default function Resume() {
                         </div>
                     </div>
 
-                    <div className="flex flex-row space-x-4">
-                        <div className="w-2/3 ">
+                    <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-4">
+                        <div className="sm:w-2/3 ">
                             <div className="font-bold text-xl">Profile</div>
                             <p className="font-light">BS/MS Software Engineering Student at RIT graduating in May 2022. Looking for full time software engineering opportunities. Available September 2022</p>
                         </div>
 
-                        <div className="w-1/3">
+                        <div className="sm:w-1/3">
                             <div className="font-bold text-xl ">Education</div>
                             <p className="font-light">Rochester Institute of Technology, BS/MS</p>
                             <p className="font-light">Software Engineering, May 2022</p>

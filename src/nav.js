@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
@@ -14,9 +14,9 @@ export default function Nav() {
             <div className="text-cyan-50 font-mono">
                 <div className="text-white  font-mono sm:space-x-4 text-lg">
                             <div className="inline-flex">Benjamin Dow</div>
-                            <div className="hidden w-0.5 h-2 md:inline-flex bg-stone-300"/>
+                            <div className="hidden w-0.5 h-2 sm:inline-flex bg-stone-300"/>
 
-                            <div className="hidden font-mono text-white space-x-4 md:inline-flex ">
+                            <div className="hidden font-mono text-white space-x-4 sm:inline-flex ">
                                 <div><a href="https://github.com/ben-dow"><FontAwesomeIcon icon={faGithub}/></a> </div>
                                 <div><a href="https://www.linkedin.com/in/benjamin-dow/"><FontAwesomeIcon icon={faLinkedin}/></a> </div>
                             </div>
@@ -34,13 +34,21 @@ export default function Nav() {
                 {/*<div><Navlinkcustom label="Projects" to="/projects"/></div>*/}
             </div>
 
-            <div className="inline-flex sm:hidden">
-                <FontAwesomeIcon className="text-white text-2xl" icon={faBars} onClick={()=>{setShowMobileMenu(!showMobileMenu)}}/>
+            <div className="inline-flex sm:hidden cursor-pointer">
+
+                {!showMobileMenu ? 
+                                    <FontAwesomeIcon  display={false} className="text-white text-2xl" icon={faBars} onClick={()=>{setShowMobileMenu(!showMobileMenu)}}/>
+                : 
+                <FontAwesomeIcon display={false} className="text-white text-2xl" icon={faTimes} onClick={()=>{setShowMobileMenu(!showMobileMenu)}}/>
+                }
             </div>
 
 
             </div>
+            <div className="sm:hidden">
             {showMobileMenu ? <MobileMenu/> : null}
+
+            </div>
             </div>
     )
 }
