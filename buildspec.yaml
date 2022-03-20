@@ -15,8 +15,8 @@ phases:
 artifacts:
   base-directory: ./build
   files:
-    - '**/*'
+    - "**/*"
 
 cache:
   paths:
-    - './node_modules/**/*'
+    - "./node_modules/**/*"

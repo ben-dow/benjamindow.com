@@ -1,17 +1,15 @@
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx}",
-  ],
+  content: ["./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       fontSize: {
-        'tiny' : '.7rem'
+        tiny: ".7rem",
       },
-      
+
       backgroundImage: {
-        'adks': "url('/src/img/adk.JPG')",
-      }
+        adks: "url('/src/img/adk.jpg')",
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/typography")],
+};
