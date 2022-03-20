@@ -8,6 +8,7 @@ phases:
       - yarn install --ignore-engines
   build:
     commands:
+      - GENERATE_SOURCEMAP=false
       - yarn build
       - cd build
       - ls
