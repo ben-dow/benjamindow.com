@@ -9,21 +9,21 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div className="flex flex-grow justify-center items-center">
-      <div className="flex flex-col sm:flex-row w-full h-96 bg-slate-700 bg-opacity-75 mx-auto xl:justify-evenly sm:justify-between p-10">
-        <div className="items-center h-full flex sm:pl-5 mb-5 sm:mb-0">
+      <div className="flex flex-col md:flex-row w-full items-center bg-slate-700 bg-opacity-75 mx-auto xl:justify-evenly md:justify-between p-10">
+        <div className="h-full flex md:pl-5 mb-5 md:mb-0">
           <div className="space-y-2  w-full">
-            <div className="text-white text-4xl sm:text-5xl font-mono sm:space-x-4">
-              <div className="text-center font-sans sm:text-left">
+            <div className="text-white text-4xl md:text-5xl font-mono md:space-x-4">
+              <div className="text-center font-sans md:text-left">
                 Benjamin Dow
               </div>
             </div>
 
-            <div className="font-sans text-white text-tiny sm:text-base text-center sm:text-left">
+            <div className="font-sans text-white text-tiny md:text-base text-center md:text-left">
               Software Engineer, Theatre Technician, Adventurer
             </div>
           </div>
         </div>
-        <div className="sm:items-center sm:h-full sm:flex sm:w-1/4">
+        <div className="w-full md:items-center md:h-full md:flex md:w-1/4">
           <div className="space-y-5 w-full">
             <div>
               <Link to="/about">
