@@ -1,0 +1,41 @@
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.navbar li {
+    width: auto;
+    display: inline;
+}
+
+.navbar li a {
+    padding-right:10px;
+    color:black;
+
+}
+
+.title {
+    text-align: center;
+}
+
+body {
+    font-family: Garamond, serif;
+}
+
+.content {
+    margin-left:auto;
+    margin-right:auto;
+    max-width:600px;
+}
+
+h5 {
+    text-align: center;
+}
+
+h5 a {
+    color:black;
+}
