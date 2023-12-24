@@ -31,3 +31,11 @@ body {
     margin-right:auto;
     max-width:600px;
 }
+
+h5 {
+    text-align: center;
+}
+
+h5 a {
+    color:black;
+}
